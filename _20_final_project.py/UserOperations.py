@@ -19,10 +19,10 @@ class UserOperations:
             else:
                 print("Invalid choice. Please select a valid option.")
     def load_food_items(self):
-            with open(r'C:\Users\Venkat\Desktop\__20__final_project.py\FoodItems.json', 'r') as file:
+            with open(r'C:\Users\Kush\Desktop\__20__final_project.py\FoodItems.json', 'r') as file:
                 self.data= json.load(file)
     def write_food_items(self,data):
-        with open(r'C:\Users\Venkat\Desktop\__20__final_project.py\orderHistory.json','w') as addfile:
+        with open(r'C:\Users\Kush\Desktop\__20__final_project.py\orderHistory.json','w') as addfile:
             json.dump(data,addfile,indent=4)
     def placeOrder(self):
        
